@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    //TEXTO PARA QUAL NOME
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vamos descobrir o ano que você nasceu!"
+        android:id="@+id/tv_primeiro"
+        android:textSize="20sp"
+        android:textColor="#810707"
+     />
+
+
+    //CAMPO PARA INSERIR NOME
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_nome"
+        android:hint="Digite seu nome..."
+        android:textSize="20sp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tv_primeiro" />
+
+
+    // CAMPO PARA INSERIR IDADE
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_idade"
+        android:hint="Digite sua idade.."
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_nome"
+        />
+
+
+
+    //CAMPO PARA INSERIR O ANO
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_ano"
+        android:hint="Digite o ano que você está.."
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_idade"
+        />
+
+    //BOTÃO
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revelar o ano"
+        android:textSize="20sp"
+        android:id="@+id/bt_01"
+        app:layout_constraintTop_toBottomOf="@+id/et_ano"
+        android:layout_marginTop="20dp"
+        android:onClick="botao"/>
+    />
+
+
+    //RESULTADO
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:id="@+id/tv_resultado"
+        app:layout_constraintTop_toBottomOf="@+id/bt_01"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
