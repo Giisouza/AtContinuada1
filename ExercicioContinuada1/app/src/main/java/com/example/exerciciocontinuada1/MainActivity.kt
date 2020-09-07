@@ -12,23 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    //Toast.makeText(
-    // this,
-    // "Um nome possui pelo menos 3 letras, #NãoQueroApelidos",
-    // Toast.LENGTH_SHORT
-    // ).show()
-
-   // Toast.makeText(
-    //this,
-   // "Você só pode ser um fantasma, digite um ano com mais de 4 digitos",
-   // Toast.LENGTH_SHORT
-    //).show()
-
-    //Toast.makeText(
-    //this,
-    //"Você é Abraão? Por favor digite sua idade novamente..",
-    //Toast.LENGTH_SHORT
-    //).show()
 
     fun validaName(): Boolean {
         val nome = et_nome.text.toString().toString()
